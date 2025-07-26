@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-gradient {
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    rgba(32, 13, 66, 0.34) 34%,
+    rgba(79, 33, 241, 0.65) 65%,
+    rgba(164, 110, 219, 0.82) 82%
+  );
+}
+
+.radial-gradient-bg {
+  background: radial-gradient(closest-side, #000 82%, #9560EB);
+}
+
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 5px #9560eb56) drop-shadow(0 0 10px #9560eb36) drop-shadow(0 0 15px #9560EB) drop-shadow(0 0 20px #9560eb6e) drop-shadow(0 0 25px #9560eb61);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px #9560eb5b) drop-shadow(0 0 20px #9560eb5b) drop-shadow(0 0 30px #9560eb6a) drop-shadow(0 0 40px #9560EB) drop-shadow(0 0 50px #9560eb52);
+  }
+}
+
+.upanddown {
+  animation: float 3s ease-in-out infinite;
+}
+
+.codeblock1 {
+  width: 372.95px;
+  height: 257.05px;
+  border-radius: 100%;
+  left: calc(50% - 372.95px / 2 - 76.53px);
+  top: calc(50% - 257.05px / 2 - 47.47px);
+  background: linear-gradient(
+    123.77deg,
+    #8a2be2 -6.46%,
+    #ffa500 59.04%,
+    #f8f8ff 124.53%
+  );
+  opacity: 0.2;
+  filter: blur(34px);
+  transform: matrix(1, 0, -0.03, 1, 0, 0);
+}
+.codeblock2 {
+  position: absolute;
+  width: 372.95px;
+  height: 257.05px;
+  left: calc(50% - 372.95px / 2 - 76.53px);
+  top: calc(50% - 257.05px / 2 - 47.47px);
+  border-radius: 100%;
+  background: linear-gradient(
+    118.19deg,
+    #1fa2ff -3.62%,
+    #12d8fa 50.44%,
+    #a6ffcb 104.51%
+  );
+  opacity: 0.2;
+  filter: blur(34px);
+  transform: matrix(1, 0, -0.03, 1, 0, 0);
+}
+.code-border {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to right bottom, #ffffff38, #ffffff00);
+  background: linear-gradient(
+    111.93deg,
+    rgba(14, 26, 45, 0.24) -1.4%,
+    rgba(17, 30, 50, 0.38) 104.96%
+  );
+  backdrop-filter: blur(26px);
+}
+
+
+@keyframes flyIn {
+  0% {
+    transform: translate(-50%, -100%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 5%) scale(1);
+    opacity: 1;
+  }
+}
