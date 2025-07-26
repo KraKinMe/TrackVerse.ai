@@ -18,7 +18,7 @@ app.use(express.json());
 
 
 const token = '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'
-const apiKey = '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';
+const apiKey = '';
 const octokit = new Octokit({ auth: `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` });
 
 const openai = new OpenAI({
